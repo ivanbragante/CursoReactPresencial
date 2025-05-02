@@ -1,0 +1,170 @@
+@import url(./variable.css);
+@import url(./mediaQuery.css);
+
+/* Tipos de formatação CSS: */
+/* Por TAG */
+/* Por ID */
+/* Por Class */
+/* Por atributos e seletores (Avançado - Pré-processadores -> SASS e LESS)*/
+
+/* padding: Margem interna de todo elemento HMTL */
+/* margin:  Margem externa de todo elemento HTML*/
+/* border: Borda de todo elemento HTMl */
+
+/* Comandos CSS para responsividade */
+/* FlexBox (flex) Transforma todo conteudo flexivel a ajustes no display*/
+/* Grid transforma o display em uma estrutura de colunas e linha */
+
+/* Unidade de medida REM - 1rem = 16pixels: Excelemente para textos na responsividade. */
+
+/* De 320px até 568px (Celular): Medida para celulares de baixa resolução */
+/* De 568px até 768px (Celular): Medida para celulares de alta resolução*/
+/* De 768px até 998px (Tablet): Medida para tablet */
+/* De 998px full: Medida para notebook e desktop */
+
+/* Formatação - Header */
+li{
+    list-style: none;
+}
+
+/* Main */
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: var(--font-form);
+}
+
+label{
+    margin-bottom: 4px;
+}
+
+#page {
+    padding:0px;
+    margin:0px;
+    border:0px;
+    font-family: var(--font-site);
+}
+
+#topo{
+    background-color: var(--backg-header-footer);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 28px;
+    color: var(--color-font-basic);
+}
+
+.img-user{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+
+/* Main */
+/* #container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: var(--color-font-basic);
+    background: #6a9bff;
+    background: linear-gradient(347deg, rgba(106,155,255,1) 8%, rgba(39,79,184,1) 76%);
+    padding: 64px 34px;
+    gap: 1rem;
+} */
+
+.menu{
+    display: flex;
+    justify-content: end;
+}
+
+
+/* Justify content: vertical */
+/* Align itens: horizontal */
+
+.link-header{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #c4c4c4;
+}
+
+.link-header:hover{
+    color:aqua;
+}
+
+.link-header:active{
+    color: var(--backg-card-form);
+}
+
+.form-one, .form-two{
+    padding: 22px;
+    background-color: var(--backg-card-form);
+    color: var(--color-font-form);
+    box-shadow: 2px 2px 6px #2c2c2c;
+    border-radius: 8px;
+    opacity: 85%;
+    transition: 0.3s ease;
+}
+
+.form-one:hover, .form-two:hover{
+    background-color: var(--backg-card-form);
+    opacity: 100%;
+}
+
+
+.camp-login, .camp-cadastro{
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 32px;
+}
+
+.camp-cadastro-obs{
+    height: 95px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    font-family: var(--font-form);
+    font-size: 0.88rem;
+}
+
+.btnAcessar{
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--backg-header-footer);
+    color: var(--color-font-basic);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnAcessar:hover{
+    background-color: #003cff;
+}
+
+.btnCadastrar{
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #287e0e;
+    color: var(--color-font-basic);
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btnCadastrar:hover{
+    background-color: #34bd0a;
+}
+
+#end{
+    background-color: var(--backg-header-footer);
+    color: var(--color-font-basic);
+    padding: 16px;
+    font-size: 0.8rem;
+    text-align: center;
+}

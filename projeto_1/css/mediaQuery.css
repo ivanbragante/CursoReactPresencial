@@ -1,0 +1,33 @@
+/* Para desktop */
+@media screen and (min-width:768px){
+    #container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        color: var(--color-font-basic);
+        background: #6a9bff;
+        background: linear-gradient(347deg, rgba(106,155,255,1) 8%, rgba(39,79,184,1) 76%);
+        padding: 64px 34px;
+        gap: 1rem;
+    }
+
+    .align-link{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+}
+
+/* Para celular */
+@media screen and (max-width: 767px){
+    #container{
+        display: grid;
+        align-items: center;
+        color: var(--color-font-basic);
+        background: #6a9bff;
+        background: linear-gradient(347deg, rgba(106,155,255,1) 8%, rgba(39,79,184,1) 76%);
+        padding: 64px 34px;
+        gap: 1rem;
+    }
+
+}

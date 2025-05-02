@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Instalação de dependencias -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+<body id="page">
+    <header id="topo">
+        <section class="topo">
+            <img src="./img/user.jpg" alt="Imagem do user" title="Imagem do user" class="img-user">
+        </section>
+
+        <section class="menu">
+            <ul class="align-link">
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank" class="link-header">WhatsApp</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com.br" target="_blank" class="link-header">Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com.br" target="_blank" class="link-header">Instagram</a>
+                </li>
+            </ul>
+        </section>
+
+    </header>
+
+
+    <main id="container">
+        <section class="box-form">
+            <div class="form-one">
+                <form action="index.html" method="GET" name="formLogin" onsubmit="return validarCamposFormLogin();">
+                    <label>Digite seu e-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email..." class="camp-login">
+
+                    <label>Digite sua senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite aqui..." class="camp-login">
+
+                    <button name="btnAcessar" class="btnAcessar" type="submit">Acessar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="box-form">
+            <div class="form-two">
+                <form action="index.html" method="GET" name="formCadastro" onsubmit="return validarCamposFormCadastro();">
+                    <label>Digite seu e-mail:</label>
+                    <input type="email" name="email" id="emailCadastro" placeholder="Digite seu email..." class="camp-cadastro">
+
+                    <label>Digite seu telefone:</label>
+                    <input type="number" name="tele" id="telefone" placeholder="Digite seu telefone..." class="camp-cadastro">
+
+                    <label>Selecione sua data de nascimento:</label>
+                    <input type="date" name="data" id="data" class="camp-cadastro">
+
+                    <label>Selecione o curso desejado:</label>
+                    <select name="curso" id="curso" class="camp-cadastro">
+                        <option value="">Selecione</option>
+                        <option value="0">Design Gráfico</option>
+                        <option value="1">Front-End</option>
+                        <option value="2">Back-End</option>
+                        <option value="3">Banco de dados</option>
+                    </select>
+
+                    <label>Digite sua senha:</label>
+                    <input type="password" name="senha" id="senhaCadastro" placeholder="Digite sua senha..." class="camp-cadastro">
+
+                    <label>Repita sua senha:</label>
+                    <input type="password" name="repSenha" id="repSenha" placeholder="Repita sua senha..." class="camp-cadastro">
+
+                    <label>Digite uma observação (Opcional):</label>
+                    <textarea name="obs" id="obs" placeholder="Digite aqui..." class="camp-cadastro-obs"></textarea>
+
+                    <button name="btnCadastrar" class="btnCadastrar">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="end">
+        <div>
+            <p>Todos os direitos reservados - 2025 WMBarros Treinamento de TI.</p>
+        </div>
+    </footer>
+
+    <script src="js/validar.js"></script>
+</body>
+</html>
