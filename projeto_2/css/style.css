@@ -3,4 +3,67 @@
 @import url(./mediaQuery.css);
 @import url(./variables.css);
 
+.wrap{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+}
 
+/* Header */
+
+.img-logotipo, .logotipo-copy{
+    height: var(--pixel-logo-quad);
+    width: var(--pixel-logo-quad);
+}
+
+.img-logotipo{
+    padding: 1.2rem;
+}
+.topo-page{
+    /* padding: 1.2rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.web{
+    display: flex;
+    justify-content: end;
+    padding: 1.2rem;
+}
+
+
+
+/* Main Page */
+
+/* Resentando as margins e paddins da pagina*/
+#home{
+    padding: var(--zeropx-home);
+    margin: var(--zeropx-home);
+    border: var(--zeropx-home);
+}
+
+.banner-page{
+    background-color: var(--cor-bg-banner);
+    color: var(--cor-texto-banner);
+}
+
+.btn-portifolio{
+    background-color: var(--cor-bg-2);
+}
+
+.about{
+    background-color: var(--cor-bg-about);
+    color: var(--cor-texto-about);
+    font-family: var(--font-texto);
+}
+
+.title-about, .sub-title-about{
+    font-family: var(--font-titulo-principal);
+}
+
+.sub-title-about{
+    font-family: var( --font-titulo);
+    font-size: var(--font-size);
+}

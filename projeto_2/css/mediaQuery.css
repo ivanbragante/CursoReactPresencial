@@ -1,0 +1,124 @@
+/* Ajustes de responsividade  */
+
+/* Responsivo para tablet notebook e desktop */
+@media screen and (min-width: 769px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-two {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .link-menu-desktop {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Poppins-Medium;
+        color: var(--cor-menu-header);
+        position: relative;
+        transition: color 0.5s ease;
+    }
+
+    .link-menu-desktop::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: #ff3700;
+        transition: width 0.3s ease;
+    }
+
+    .link-menu-desktop:hover::after {
+        width: 100%;
+    }
+
+    .link-menu-desktop:hover {
+        color: var(--cor-texto-3);
+    }
+}
+
+
+/* Responsivdo para celulares e tablets */
+@media screen and (max-width: 768px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    .img-logotipo {
+        max-width: 115px;
+        max-height: 115px;
+    }
+
+    .menu-one{
+        width: 100%;
+        text-align: center;
+        left: -140%;
+        top: -18px;
+        padding: 1rem 0rem;
+        position: absolute;
+        background-color: var(--cor-bg-menu-mobile);
+        transition: 0.3s;
+    }
+
+    .menu-one.active{
+        left: 0px;
+    }
+
+    .nav-item{
+        margin: 6px 0px;
+        list-style: none;
+    }
+
+    .link-menu-mobile{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Poppins-Medium;
+        color: var(--cor-texto-menu-mobile);
+    }
+
+    .bar{
+        display: block;
+        width: 28px;
+        height: 3px;
+        border-radius: 2px;
+        margin: 5px auto;
+        background-color: var(--cor-barra-menu-mobile);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-hamb{
+        cursor: pointer;
+        display: block;
+    }
+
+    .btn-hamb.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .btn-hamb.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .btn-hamb.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+   
+
+}
+
+/* Responsividade para o Quem sou ficar certo */
+@media screen and (max-width: 790px){
+    .menu-two {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+}

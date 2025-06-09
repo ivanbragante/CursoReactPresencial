@@ -1,0 +1,36 @@
+:root{
+    --cor-menu-header: #000000;
+    --cor-menu-footer: #000000;
+
+    --cor-texto-1: #000000;
+    --cor-texto-2: #ffffff;
+    --cor-texto-3: #ff6347;
+
+    --font-titulo-principal: Montserrat-SemiBold;
+    --font-titulo: Montserrat-Medium;
+    --font-texto: Poppins-Medium;
+    --font-size: 0.8rem;
+
+    /* Variaveis de formatação do banner */
+    --cor-bg-banner: #000000;
+    --cor-texto-banner: #ffffff;
+    --cor-menu-mobile: #000000;
+    --cor-barra-menu-mobile: #000000;
+    --cor-texto-menu-mobile: #ffffff;
+
+    /* Variaveis de padding */
+    --zeropx-home: 0px;
+    --pixel-logo-quad: 170px;
+
+    /* Variaveis de formatação - Quem sou */
+    --cor-bg-about: #ff3700;
+    --cor-bg-menu-mobile: #ff3700;
+    --cor-texto-about: #ffffff;
+    
+
+    /* Variaveis de formatação - Projetos (Portifólio) */
+
+    /* Variaveis de formatação - Contato! */
+
+    /* Variaveis de formatação - Footer! */
+}
