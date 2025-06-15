@@ -67,3 +67,73 @@
     font-family: var( --font-titulo);
     font-size: var(--font-size);
 }
+
+
+.nome{
+    font-size: 4rem;
+    font-family: Montserrat-SemiBold;
+}
+
+.funcao{
+    font-size: 1.8rem;
+    font-family: Montserrat-Regular;
+}
+
+.descricao{
+    font-size: 1.1rem;
+    font-family: Poppins-Light;
+}
+
+.icone-jp{
+    color: var(--cor-icone-nome);
+    transition: 0.3s;
+    font-family: Poppins-Medium;
+}
+
+.icone-jp:hover{
+    color: var(--cor-icone-nome-hover);
+}
+
+.link-github, .link-linkedin{
+    height: 60px;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Poppins-SemiBold;
+    color: black;
+    padding: 1.6rem 2rem;
+    margin: 0.2rem;
+    border: 3.8px #ff6347 solid;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;  
+}
+
+.link-github:hover, .link-linkedin:hover{
+    border: 5px #ff3700 solid;
+    transform: scale(1.02);
+}
+
+.github, .linkedin{
+    width: 65px;
+}
+
+.box-img-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-banner{
+    width: 100%;
+    max-width: 360px;
+    border-radius: 50%;
+    margin: 2.4rem;
+    transition: .2s;
+}
+
+.img-banner:hover{
+    transform: scale(1.1);
+}

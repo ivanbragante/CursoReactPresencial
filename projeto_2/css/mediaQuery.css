@@ -1,5 +1,27 @@
 /* Ajustes de responsividade  */
 
+
+@media screen and (min-width: 992px){
+    .grid-banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }   
+
+    .text-banner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 993px){
+  .text-banner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* margin-left: -155px; */
+    }
+}
 /* Responsivo para tablet notebook e desktop */
 @media screen and (min-width: 769px) {
     .menu-mobile {
@@ -43,10 +65,24 @@
     .link-menu-desktop:hover {
         color: var(--cor-texto-3);
     }
+
+     .btn-portifolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .title-banner{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+    }
 }
 
 
-/* Responsivdo para celulares e tablets */
+/* Responsivo para celulares e tablets */
 @media screen and (max-width: 768px) {
     .menu-desktop {
         display: none;
@@ -65,7 +101,7 @@
         padding: 1rem 0rem;
         position: absolute;
         background-color: var(--cor-bg-menu-mobile);
-        transition: 0.3s;
+        transition: 0.7s ease-in-out;
     }
 
     .menu-one.active{
@@ -73,7 +109,7 @@
     }
 
     .nav-item{
-        margin: 6.5px 0px;
+        margin: 6.8px 0px;
         list-style: none;
     }
 
@@ -110,8 +146,22 @@
     .btn-hamb.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
-   
 
+    .text-banner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-banner{
+        padding: 3rem 3rem 0rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+    }
+    
 }
 
 /* Responsividade para o Quem sou ficar certo */
