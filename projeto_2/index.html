@@ -127,25 +127,70 @@
         <section class="projects" id="projects">
             <div class="wrap">
                 <h1 class="title-portifolio">Portifólio (Projetos)!</h1>
-                <h2 class="title-projects">Estes são alguns dos principais projetos web desenvolvidos utilizando os recursos de Front-End.</h2>
+                <h2 class="text-projects">Estes são alguns dos principais projetos web desenvolvidos utilizando os recursos de Front-End.</h2>
 
                 <div class="grid-projects" id="projects-container">
-                    <script>
-                        const container = document.getElementById("projects-container");
-
-                        for (let i = 1; i <= 8; i++) {
-                            container.innerHTML += `<div class="card-projects">
+                    <!-- <div class="card-projects">
                             <img src="./images/layoutSite.jpeg" alt="Projeto ${i}" title="Projeto de site!" class="img-card">
                             <h3>Projeto ${i} - Front-End</h3>
                             <p>Informações sobre o projeto você encontra no GitHub</p>
                             <a href="" class="link-box-projetos">
-                                <img src="./images/icones/icons-linkedin-250.svg" alt="Repositório GitHub!" title="Repositório GitHub!" class="img-github">
+                                <img src="./images/icones/icons-github-250.svg" alt="Repositório GitHub!" title="Repositório GitHub!" class="img-github">Repositório GitHub!
+                            </a>
+                        </div>
+
+                        <div class="card-projects">
+                            <img src="./images/layoutSite.jpeg" alt="Projeto ${i}" title="Projeto de site!" class="img-card">
+                            <h3>Projeto ${i} - Front-End</h3>
+                            <p>Informações sobre o projeto você encontra no GitHub</p>
+                            <a href="" class="link-box-projetos">
+                                <img src="./images/icones/icons-github-250.svg" alt="Repositório GitHub!" title="Repositório GitHub!" class="img-github">Repositório GitHub!
+                            </a>
+                        </div>
+
+                        <div class="card-projects">
+                            <img src="./images/layoutSite.jpeg" alt="Projeto ${i}" title="Projeto de site!" class="img-card">
+                            <h3>Projeto ${i} - Front-End</h3>
+                            <p>Informações sobre o projeto você encontra no GitHub</p>
+                            <a href="" class="link-box-projetos">
+                                <img src="./images/icones/icons-github-250.svg" alt="Repositório GitHub!" title="Repositório GitHub!" class="img-github">Repositório GitHub!
+                            </a>
+                        </div>
+
+                        <div class="card-projects">
+                            <img src="./images/layoutSite.jpeg" alt="Projeto ${i}" title="Projeto de site!" class="img-card">
+                            <h3>Projeto ${i} - Front-End</h3>
+                            <p>Informações sobre o projeto você encontra no GitHub</p>
+                            <a href="" class="link-box-projetos">
+                                <img src="./images/icones/icons-github-250.svg" alt="Repositório GitHub!" title="Repositório GitHub!" class="img-github">Repositório GitHub!
+                            </a>
+                        </div>
+
+                        <div class="card-projects">
+                            <img src="./images/layoutSite.jpeg" alt="Projeto ${i}" title="Projeto de site!" class="img-card">
+                            <h3>Projeto ${i} - Front-End</h3>
+                            <p>Informações sobre o projeto você encontra no GitHub</p>
+                            <a href="" class="link-box-projetos">
+                                <img src="./images/icones/icons-github-250.svg" alt="Repositório GitHub!" title="Repositório GitHub!" class="img-github">Repositório GitHub!
+                            </a>
+                        </div> -->
+
+                    <script>
+                        const container = document.getElementById("projects-container");
+
+                        for (let i = 1; i <= 4; i++) {
+                            container.innerHTML += `<div class="card-projects">
+                            <img src="./images/layoutSite.jpeg" alt="Projeto ${i}" title="Projeto de site!" class="img-card">
+                            <h3>Projeto ${i} - Front-End</h3>
+                            <p class="align-text">Informações sobre o projeto você encontra no GitHub</p>
+                            <a href="" class="link-box-projects">
+                                <img src="./images/icones/icons-github-250.svg" alt="Repositório GitHub!" title="Repositório GitHub" class="img-github">Repositório GitHub
                             </a>
                         </div>`;
 
                         }
-
                     </script>
+
                 </div>
             </div>
         </section>

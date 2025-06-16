@@ -1,24 +1,42 @@
 /* Ajustes de responsividade  */
 
-
 @media screen and (min-width: 992px){
     .grid-banner{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
     }   
 
     .text-banner{
-        text-align: center;
         display: flex;
         flex-direction: column;
+        margin: 0px;
+    }
+
+    .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 0.8rem;
+        padding: 0rem 1.8rem;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 993px){
+
+   .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 0.5rem;
+        padding: 0rem 1.8rem;
+    }
+
   .text-banner{
         text-align: center;
         display: flex;
         flex-direction: column;
+        margin: 0px;
         /* margin-left: -155px; */
     }
 }
@@ -69,10 +87,12 @@
      .btn-portifolio{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-top: 21px;
+        gap: 3px;
     }
     
     .title-banner{
-        padding: 3rem;
+        padding: 0rem 3rem 0rem 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -151,17 +171,37 @@
         text-align: center;
         display: flex;
         flex-direction: column;
+        margin: 0px;
     }
 
     .title-banner{
-        padding: 3rem 3rem 0rem 3rem;
+        padding: 0rem 3rem 0rem 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         cursor: default;
     }
-    
+
+    .btn-portifolio{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 10px;
+    }
+
+    .card-projects{
+        width: 310px;
+        padding-bottom: 3px;
+    }
+
+    .grid-projects{
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+    }
+
+           
 }
 
 /* Responsividade para o Quem sou ficar certo */
