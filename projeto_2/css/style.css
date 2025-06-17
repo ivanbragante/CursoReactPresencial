@@ -3,6 +3,11 @@
 @import url(./mediaQuery.css);
 @import url(./variables.css);
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 .wrap{
     width: 100%;
     max-width: 1280px;
@@ -10,11 +15,32 @@
     display: grid;
 }
 
-/* Header */
+.btn-inicio{
+    margin: 0rem 0.8rem 0.8rem 0rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
 
-.img-logotipo, .logotipo-copy{
+.btn-nav-topo{
+    width: 60px;
+    transition: .4s;
+}
+
+.btn-nav-topo:hover{
+    transform: scale(1.1);
+}
+
+/* Header */
+.img-logotipo{
     height: var(--pixel-logo-quad);
     width: var(--pixel-logo-quad);
+    transition: .4s;
+    cursor: default;
+}
+
+.img-logotipo:hover, .logotipo-copy:hover{
+    transform: scale(1.08);
 }
 
 .img-logotipo{
@@ -206,6 +232,11 @@
     border-radius: 8px;
     color: black;
     font-family: var(--font-texto-card);
+    transition: .4s;
+}
+
+.card-projects:hover{
+    transform: scale(1.02);
 }
 
 .align-text{
@@ -238,4 +269,168 @@
 .link-box-projects:hover{
     background-color: #fa9200;
     transition: 0.4s;
+}
+
+.contact{
+    padding-top: 0rem 3rem;
+    background-color: var(--cor-bg-contact);
+    color: var(--cor-box-contact);
+    font-family: var(--font-text-contact);
+}
+
+.align-contact{
+    text-align: center;
+}
+
+.title-contact{
+    margin: 0px;
+    font-family: var(--font-titulo-principal);
+    font-size: var(--font-size-title);
+}
+
+.form-data{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-text-contact);
+}
+
+.info-contact{
+    padding-right: 18px;
+}
+
+.ul-contact{
+    padding-left: 0px;
+}
+
+.list-ct{
+    margin-bottom: 12px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.icon-ct{
+    width: 45px;
+    margin-right: 12px;
+    transition: .4s;
+}
+
+.icon-ct:hover{
+    transform: scale(1.1);
+}
+
+.link-wpp{
+    text-decoration: none;
+    color: var(--cor-link-contato);
+    display: flex;
+    flex-direction: column;
+}
+
+.link-wpp:hover{
+    background-color: #25b43c;
+    border-radius: 6px;
+    padding: 6px;
+    color: white;
+    transition: .4s;
+}
+
+.info-wpp{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.camp-form{
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    font-family: var(--font-form-contact);
+    font-size: 0.9rem;
+    transition: .4s;
+    box-shadow: 1px 1px 4px black;
+}
+
+.camp-form-msg{
+    height: 90px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    font-family: var(--font-form-contact);
+    font-size: 0.9rem;
+    transition: .4s;
+    box-shadow: 1px 1px 4px black;
+}
+
+.camp-form-msg:hover, .camp-form:hover{
+    border: 1.6px solid;
+    transform: scale(1.04);
+}
+
+.btn-enviar{
+    width: 110px;
+    height: 35px;
+    background-color: var(--cor-bg-btn-enviar);
+    color: var(--cor-texto-btn-enviar);
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 1px 1px 4px black;
+    transition: .4s;
+}
+
+.btn-enviar:hover{
+    background-color: var(--cor-bg-btn-enviar-hover);
+}
+
+.map-contact{
+    display: flex;
+    background-color: white;
+}
+
+/* Footer */
+#end-page{
+    background-color: var(--cor-bg-footer);
+    color: var(--cor-texto-footer);
+    text-align: center;
+}
+
+.rs-link{
+    text-decoration: none;
+    transition: .5s;
+}
+
+.rs-link:hover{
+    transform: scale(1.2)
+}
+
+/* Falta aqui */
+.title-rs{
+    font-family: var(--font-titulo-principal);
+    font-size: var(--font-size-title);
+}
+
+.rs-icon{
+    border-bottom: 1px solid white;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-copy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-family: var(--font-copy);
+    font-size: 0.7rem;
+}
+
+.logotipo-copy{
+    width: 60px;
+    height: 60px;
+    transition: .4s;
 }
