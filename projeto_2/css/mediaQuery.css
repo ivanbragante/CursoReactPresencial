@@ -24,6 +24,14 @@
 
 @media screen and (min-width: 769px) and (max-width: 993px){
 
+    .text-banner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        /* margin-left: -155px; */
+    }
+
    .grid-projects{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -32,14 +40,9 @@
         padding: 0rem 1.8rem;
     }
 
-  .text-banner{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        /* margin-left: -155px; */
-    }
+  
 }
+
 /* Responsivo para tablet notebook e desktop */
 @media screen and (min-width: 769px) {
     .menu-mobile {
@@ -84,6 +87,18 @@
         color: var(--cor-texto-3);
     }
 
+    .img-banner{
+        width: 100%;
+        max-width: 360px;
+        border-radius: 50%;
+        margin: 2.4re 0rem;
+        transition: .2s;
+    }
+
+    .img-banner:hover{
+        transform: scale(1.1);
+    }
+
      .btn-portifolio{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -105,9 +120,24 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
-}
 
+    .info-copy{
+        font-family: var(--font-copy);
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+    }
+
+    .rs-icon{
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    
+
+}
 
 /* Responsivo para celulares e tablets */
 @media screen and (max-width: 768px) {
@@ -117,7 +147,6 @@
 
     .img-logotipo {
         max-width: 115px;
-        max-height: 115px;
     }
 
     .menu-one{
@@ -174,13 +203,6 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .text-banner{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-    }
-
     .title-banner{
         padding: 0rem 3rem 0rem 3rem;
         display: flex;
@@ -188,6 +210,24 @@
         align-items: center;
         justify-content: center;
         cursor: default;
+    }
+
+    .text-banner{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .img-banner{
+        width: 75%;
+        border-radius: 50%;
+        margin: 2.4rem 0rem;
+        transition: .2s;
+    }
+
+    .img-banner:hover{
+        transform: scale(1.1);
     }
 
     .btn-portifolio{
@@ -205,11 +245,31 @@
     .grid-projects{
         display: grid;
         justify-content: center;
-        gap: 10px;
+        gap: 1rem;
     }
 
     .contact {
         padding: 1.6rem;
+    }
+
+    .rs-icon{
+        border-bottom: 1px solid white;
+        display: flex;
+        gap: 0.3rem;
+        justify-content: center;
+    }
+
+    .img-icon{
+        width: 100%;
+        max-width: 40px;
+        object-fit: cover;
+    }
+
+    .info-copy{
+        font-family: var(--font-copy);
+        font-size: 0.7rem;
+        padding: 6px 0px;       
+        text-align: center;        
     }
 
            
@@ -221,5 +281,13 @@
         display: flex;
         gap: 1rem;
         font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .img-banner{
+        width: 100%;
+        max-width: 360px;
+        object-fit: contain;
     }
 }
