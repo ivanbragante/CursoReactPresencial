@@ -147,6 +147,7 @@
 
     .img-logotipo {
         max-width: 115px;
+        max-height: 115px;
     }
 
     .menu-one{
@@ -220,7 +221,7 @@
     }
 
     .img-banner{
-        width: 75%;
+        width: 50%;
         border-radius: 50%;
         margin: 2.4rem 0rem;
         transition: .2s;
@@ -255,7 +256,7 @@
     .rs-icon{
         border-bottom: 1px solid white;
         display: flex;
-        gap: 0.3rem;
+        gap: 2.5rem;
         justify-content: center;
     }
 
@@ -284,10 +285,51 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 420px) {
+@media screen and (min-width: 320px) and (max-width: 430px) {
+    
     .img-banner{
-        width: 100%;
+        /* ajuste de width feito */
+        width: 62%;
         max-width: 360px;
         object-fit: contain;
     }
+
+    /* Ajuste feito fora de aula */
+    .btn-nav-topo{
+        margin-left: -170px;
+    }
+
+    .btn-portifolio{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-top: 10px;
+        /* Ajuste feito fora de aula */
+        max-width: 300px;
+    }
+
+    /* Ajuste feito fora de aula */
+    .img-logotipo {
+        max-width: 95px;
+        max-height: 95px;
+    }
+    /* Ajuste feito fora de aula */
+    .box-habil{
+        max-width: 372px;
+    }
+    /* Ajuste feito fora de aula */
+    .rs-icon{
+        gap: 0.9rem;
+    }
+    /* Ajuste feito fora de aula */
+    .menu-one{
+        top: -35px;
+    }
+    
+    /* Ajuste feito fora de aula */
+    .menu-web{
+        margin-right: -110px;
+    }
+
+
 }

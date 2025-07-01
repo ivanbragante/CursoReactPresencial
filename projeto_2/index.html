@@ -138,7 +138,7 @@
                         <script>
                             const container = document.getElementById("projects-container");
 
-                            for (let i = 1; i <= 6; i++) {
+                            for (let i = 1; i <= 4; i++) {
                                 container.innerHTML += `<div class="card-projects">
                                 <img src="./images/layoutSite.jpeg" alt="Projeto ${i}" title="Projeto de site!" class="img-card">
                                 <h3>Projeto ${i} - Front-End</h3>
@@ -192,13 +192,18 @@
                         </div>
 
                         <div class="form-contact">
-                            <form action="index.html" method="GET" name="form" onsubmit="" class="form-data">
+                            <form action="index.html" method="GET" name="formContato" onsubmit="validarCamposFormulario()" class="form-data">
                                 <label for="">Digite seu nome</label>
                                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." class="camp-form">
 
                                 <label for="">Digite seu email</label>
-                                <input type="text" name="email" id="email" placeholder="Digite seu email..."
-                                    class="camp-form">
+                                <input type="email" name="email" id="email" placeholder="Digite seu email..."
+                                    class="camp-form" oninput="validarEmail(this)">
+                                <small id="erroEmail" class="erroEmail">Digite um e-mail válido</small>
+
+                                <label for="">Digite seu telefone</label>
+                                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone..."
+                                    class="camp-form" oninput="mascaraTelefone(this)" maxlength="15">
 
                                 <label for="">Digite seu assunto</label>
                                 <input type="text" name="assunto" id="assunto" placeholder="Digite seu assunto..."

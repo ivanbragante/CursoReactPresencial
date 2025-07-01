@@ -25,10 +25,12 @@ html{
 .btn-nav-topo{
     width: 60px;
     transition: .4s;
+    opacity: 50%;
 }
 
 .btn-nav-topo:hover{
     transform: scale(1.1);
+    opacity: 100%;
 }
 
 /* Header */
@@ -277,6 +279,7 @@ html{
 
 .title-contact{
     margin: 0px;
+    margin-bottom: 0.8rem;
     font-family: var(--font-titulo-principal);
     font-size: var(--font-size-title);
 }
@@ -399,19 +402,19 @@ html{
     transform: scale(1.2)
 }
 
-/* Falta aqui */
+
 .title-rs{
     font-family: var(--font-titulo-principal);
     font-size: var(--font-size-title);
 }
 
-.rs-icon{
+/* .rs-icon{
     border-bottom: 1px solid white;
     display: flex;
     gap: 2rem;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /* .info-copy{
     display: flex;
@@ -426,4 +429,14 @@ html{
     width: 60px;
     height: 60px;
     transition: .4s;
+}
+
+.erroEmail {
+    width: 158px;
+    background-color: #f40000;
+    color: white;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    display: none;
 }
