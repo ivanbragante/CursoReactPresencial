@@ -6,7 +6,7 @@ import Logotipo_BR_IMG from '../img/logotipobr.jpeg';
 const Logotipo_BR_CPN = () => {
     return(
         <div>
-            <img src={Logotipo_BR_IMG} alt="Governo Federal!" title="Governo Federal!"/>
+            <img src={Logotipo_BR_IMG} alt="Governo Federal!" title="Governo Federal!" className="logotipo-header"/>
         </div>
     )
 }
