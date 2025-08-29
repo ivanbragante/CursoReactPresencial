@@ -1,7 +1,7 @@
 import React from "react";
 import img_inicio from '../images/btnNavInicio.png';
 
-const Cp_btn_inicio = () => {
+const CpBtnInicio = () => {
     return (
         <div className="btn-nav">
             <img src={img_inicio} alt="Voltar ao inicio da página" />
@@ -9,4 +9,4 @@ const Cp_btn_inicio = () => {
     );
 }
 
-export default Cp_btn_inicio;
+export default CpBtnInicio;

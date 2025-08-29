@@ -1,11 +1,11 @@
 // Importando componentes
-import Cp_btn_inicio from './components/Cp_btn_inicio';
-import Cp_header from './components/Cp_header';
-import Cp_banner from './components/Cp_banner';
-import Cp_about from './components/Cp_about';
-import Cp_projects from './components/Cp_projects';
-import Cp_contact from './components/Cp_contact';
-import Cp_footer from './components/Cp_footer';
+import CpBtnInicio from './components/CpBtnInicio';
+import CpHeader from './components/CpHeader';
+import CpBanner from './components/CpBanner';
+import CpAbout from './components/CpAbout';
+import CpProjects from './components/CpProjects';
+import CpContact from './components/CpContact';
+import CpFooter from './components/CpFooter';
 
 // Importando arquivo css
 import './css/style.css'
@@ -13,17 +13,17 @@ import './css/style.css'
 function App() {
   return (
     <>
-      <Cp_btn_inicio/>
-      <Cp_header/>      
+      <CpBtnInicio/>
+      <CpHeader/>      
 
       <main>
-        <Cp_banner/>
-        <Cp_about/>
-        <Cp_projects/>
-        <Cp_contact/>
+        <CpBanner/>
+        <CpAbout/>
+        <CpProjects/>
+        <CpContact/>
       </main>
 
-      <Cp_footer/>
+      <CpFooter/>
     </>
 
   );

@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Cp_footer = () => {
+const CpFooter = () => {
     return (
         <section>
             
@@ -9,4 +9,4 @@ const Cp_footer = () => {
     );
 }
 
-export default Cp_footer;
+export default CpFooter;

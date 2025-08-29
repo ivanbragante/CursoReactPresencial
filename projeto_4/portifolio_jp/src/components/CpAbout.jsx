@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const Cp_about = () => {
+const CpAbout = () => {
     return (
         <section className="about" id="about">
             <div className="wrap">
@@ -40,4 +40,4 @@ const Cp_about = () => {
     );
 }
 
-export default Cp_about;
+export default CpAbout;

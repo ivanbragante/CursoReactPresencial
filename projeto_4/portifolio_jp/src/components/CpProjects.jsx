@@ -41,7 +41,7 @@ for(let i = 0; i < projetos.length; i++){
     )
 }
 
-const Cp_projects = () => {
+const CpProjects = () => {
     return (
         <section className="projects" id="portifolio">
             <div className="wrap">
@@ -56,4 +56,4 @@ const Cp_projects = () => {
     );
 }
 
-export default Cp_projects;
+export default CpProjects;

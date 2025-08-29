@@ -4,7 +4,7 @@ import linkedin_banner from "../images/icones/icons-linkedin-250.svg";
 import img_banner from "../images/imgBanner.jpg";
 
 
-const Cp_banner = () => {
+const CpBanner = () => {
     return (
         <section className="banner-page">
             <div className="wrap column-1">
@@ -33,4 +33,4 @@ const Cp_banner = () => {
     );
 }
 
-export default Cp_banner;
+export default CpBanner;

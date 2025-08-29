@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img_logotipo from '../images/logotipoJP.png';
 
-const Cp_header = () => {
+const CpHeader = () => {
 
     //Gerencia o estado do menu mobile
     const [classOn, setClassOn] = useState(false);
@@ -44,4 +44,4 @@ const Cp_header = () => {
     );
 }
 
-export default Cp_header;
+export default CpHeader;
