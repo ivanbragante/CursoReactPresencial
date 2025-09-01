@@ -37,7 +37,7 @@ const CpAbout = () => {
                 </div>
             </div>
         </section>
-    );
+    )
 }
 
 export default CpAbout;

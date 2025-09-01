@@ -1,0 +1,59 @@
+:root{
+    --cor-menu-header: #000000;
+    --cor-menu-footer: #000000;
+
+    --cor-texto-1: #000000;
+    --cor-texto-2: #ffffff;
+    --cor-texto-3: #ff6347;
+
+    
+    --font-size-title: 2.2rem;
+    --font-size-sub-title: 1.7rem;
+    --font-size-texto: 0.9rem;
+    --font-titulo-principal: Montserrat-SemiBold;
+    --font-sub-titulo: Montserrat-Medium;
+    --font-texto: Poppins-Light;
+
+    /* Variaveis de formatação do banner */
+    --cor-bg-banner: #000000;
+    --cor-texto-banner: #ffffff;
+    --cor-menu-mobile: #000000;
+    --cor-barra-menu-mobile: #000000;
+    --cor-texto-menu-mobile: #ffffff;
+    --cor-icone-nome: #ff3700;
+    --cor-icone-nome-hover: #ff6347;
+
+    /* Variaveis de padding */
+    --zeropx-home: 0px;
+    --pixel-logo-quad: 170px;
+
+    /* Variaveis de formatação - Quem sou */
+    --cor-bg-about: #ff3700;
+    --cor-bg-menu-mobile: #ff3700;
+    --cor-texto-about: #ffffff;
+   
+    
+
+    /* Variaveis de formatação - Projetos (Portifólio) */
+    --cor-bg-projeto: black;
+    --cor-bg-cards: white;
+    --cor-texto-projetos: white;
+    --font-btn-projetos: Poppins-Regular;
+    --font-texto-card: Poppins-Medium;
+
+    /* Variaveis de formatação - Contato! */
+    --cor-box-contact: white;
+    --cor-link-contct: white;
+    --cor-bg-contact: #ff3700;
+    --font-text-contact: Poppins-Light;
+    --font-form-contact: Poppins-Regular;
+    --cor-bg-btn-enviar: black;
+    --cor-texto-btn-enviar: white;
+    --cor-bg-btn-enviar-hover: green;
+
+    /* Variaveis de formatação - Footer! */
+    --cor-bg-footer: black;
+    --cor-texto-footer: white;
+    --font-copy: Poppins-Regular;
+
+}

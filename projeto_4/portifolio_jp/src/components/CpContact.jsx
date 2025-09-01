@@ -60,11 +60,56 @@ const CpContact = () => {
                 <h1 className="title-contact">Contato!</h1>
                 <div className="box-contact">
                     <div className="info-contact">
-                        
+                        <span>Tire todas as suas dúvidas sobre os nossos serviços ou realize um orçamento.</span>
+                        <span>Esses são nossos principais meios de contato:</span>
+                        <ul>
+                            <li>
+                                <img src={icon_contact_email} alt="Email para contato..." title="Email para contato..." className="icon-ct"/>
+                                <span>contato@ilbinformatica.com</span>
+                            </li>
+
+                            <li>
+                                <img src={icon_contact_telefone} alt="Telefone para contato..." title="Telefone para contato..." className="icon-ct"/>
+                                <span>(43) 3333-3333</span>
+                            </li>
+
+                            <li>
+                                <img src={icon_contact_whatsapp} alt="Nos contate pelo whatsapp..." title="Nos contate pelo whatsapp..." className="icon-ct"/>
+                                <a href="https://api.whatsapp.com/send?phone=5543999999999" target="_blank" className="link-wht-contato">
+                                    (43) 99999-9999
+                                    <span>Clique no número!</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <img src={icon_contact_local} alt="Nossa localização..." title="Nossa localização..." className="icon-ct"/>
+                                <span>Avnida Teste №100 CEP: 000000-000 - Londrina PR</span>
+                            </li>
+
+                        </ul>
                     </div>
 
                     <div className="form-contact">
-                        
+
+                        {/* GET: Envia os dados para a URL da página de destino */}
+                        {/* POST: Trafega os dados de forma oculta via requisição de protocolo HTTPS */}
+                        <form action="index.html" method="GET">
+                            
+                            <label>Digite seu nome:</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." className="form-campo-input"/>
+
+                            <label>Digite seu e-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email aqui..." className="form-campo-input"/>
+
+                            <label>Digite o assunto:</label>
+                            <input type="text" name="ass" id="ass" placeholder="Digite seu assunto aqui..." className="form-campo-input"/>
+
+                            <label>Digite sua mensagem:</label>
+                            <textarea placeholder="Digite sua mensagem aqui..." name="msg" id="msg" className="form-campo-textarea"></textarea>
+
+                            <button type="submit" name="btnEnviar" className="btn-enviar">Enviar</button>
+                            <button type="reset" name="btnResetar" className="btn-resetar">Reset</button>
+                        </form>
                     </div>
                 </div>
             </div>
