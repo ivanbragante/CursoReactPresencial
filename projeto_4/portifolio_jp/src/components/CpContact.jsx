@@ -93,22 +93,25 @@ const CpContact = () => {
 
                         {/* GET: Envia os dados para a URL da página de destino */}
                         {/* POST: Trafega os dados de forma oculta via requisição de protocolo HTTPS */}
-                        <form action="index.html" method="GET">
+                        <form action="index.html" method="GET" onSubmit={handleSubmit(onSubmit)}>
                             
                             <label>Digite seu nome:</label>
-                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." className="form-campo-input"/>
+                            <Input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." className="form-campo-input" register={register} error={errors.nome}/>
 
                             <label>Digite seu e-mail:</label>
-                            <input type="email" name="email" id="email" placeholder="Digite seu email aqui..." className="form-campo-input"/>
+                            <Input type="email" name="email" id="email" placeholder="Digite seu email aqui..." className="form-campo-input" register={register} error={errors.email}/>
 
                             <label>Digite o assunto:</label>
-                            <input type="text" name="ass" id="ass" placeholder="Digite seu assunto aqui..." className="form-campo-input"/>
+                            <Input type="text" name="ass" id="ass" placeholder="Digite seu assunto aqui..." className="form-campo-input" register={register} error={errors.ass}/>
 
                             <label>Digite sua mensagem:</label>
-                            <textarea placeholder="Digite sua mensagem aqui..." name="msg" id="msg" className="form-campo-textarea"></textarea>
+                            <Textarea placeholder="Digite sua mensagem aqui..." name="msg" id="msg" className="form-campo-textarea" register={register} error={errors.msg}></Textarea>
 
-                            <button type="submit" name="btnEnviar" className="btn-enviar">Enviar</button>
-                            <button type="reset" name="btnResetar" className="btn-resetar">Reset</button>
+                            <div className="align-btn">
+                                <button type="submit" name="btnEnviar" className="btn-enviar">Enviar</button>
+                                <button type="reset" name="btnResetar" className="btn-resetar" onClick={() => reset()}>Reset</button>
+                            </div>
+                            
                         </form>
                     </div>
                 </div>

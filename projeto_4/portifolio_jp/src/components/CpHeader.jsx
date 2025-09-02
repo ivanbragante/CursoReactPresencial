@@ -7,7 +7,7 @@ const CpHeader = () => {
     const [classOn, setClassOn] = useState(false);
 
     return (
-        <header>
+        <header className="topo">
             <section className="container">
                 <div className="logotipo">
                     <img src={img_logotipo} alt="Portifolio Jp" title="Portifolio Jp" className="img-logotipo"/>

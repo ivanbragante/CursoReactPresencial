@@ -1,6 +1,6 @@
 :root{
-    --cor-menu-header: #000000;
-    --cor-menu-footer: #000000;
+
+    --sombra: #000000;
 
     --cor-texto-1: #000000;
     --cor-texto-2: #ffffff;
@@ -13,6 +13,13 @@
     --font-titulo-principal: Montserrat-SemiBold;
     --font-sub-titulo: Montserrat-Medium;
     --font-texto: Poppins-Light;
+
+    /* Variaveis de formatação do header (topo) */
+    --cor-menu-header: #000000;
+    --cor-bg-header: #ffffff;
+    --font-header: Poppins-Medium;
+    --cor-font-menu-hover: #ff3700;
+    --cor-font-menu: #000000;
 
     /* Variaveis de formatação do banner */
     --cor-bg-banner: #000000;
@@ -55,5 +62,6 @@
     --cor-bg-footer: black;
     --cor-texto-footer: white;
     --font-copy: Poppins-Regular;
+    --cor-menu-footer: #000000;
 
 }
