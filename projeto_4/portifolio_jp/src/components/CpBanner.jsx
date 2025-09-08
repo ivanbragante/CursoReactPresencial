@@ -18,11 +18,11 @@ const CpBanner = () => {
                     <div className="btn-portifolio">
                         <a href="https://github.com/ivanbragante" target="_blank" className="link-github">
                             <img src={github_banner} alt="GitHub!" title="GitHub!" className="github"/>
-                            GitHub
+                                GitHub
                         </a>
                         <a href="https://www.linkedin.com/in/ivan-bragante-204a51190/" target="_blank" className="link-linkedin">
                             <img src={linkedin_banner} alt="Linkedin!" title="Linkedin!" className="linkedin"/>
-                            LinkedIn
+                                LinkedIn
                         </a>
                     </div>
                 </div>

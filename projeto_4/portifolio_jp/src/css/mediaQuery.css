@@ -1,6 +1,442 @@
+/* ----------- Mobile First (até 767px) ----------- */
+
+.btn-nav-topo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.btn-nav-topo:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    transition: 0.4s;
+}
+
+.topo nav ul .nav-item a{
+    text-decoration: none;
+    color: var(--cor-font-menu);
+    text-transform: uppercase;
+    font-family: var(--font-header);
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+
+.img-logotipo {
+    width: 90px;
+    margin-top: 5px;
+}
+
+
+.nome {
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.nome:hover {
+    color: #ff3700;
+    cursor: default;
+    transition: 0.25s;
+}
+
+.funcao {
+    font-size: 1.4rem;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.funcao:hover {
+    color: #ff3700;
+    cursor: default;
+}
+
+.descricao {
+    font-size: 1rem;
+    font-family: var(--font-text-banner);
+    margin: 0px;
+}
+
+.descricao:hover {
+    color: #ff3700;
+    cursor: default;
+    transition: 0.25s;
+}
+
+.title-banner {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.btn-portifolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.github {
+    width: 70px;
+    margin-right: 2px;
+}
+
+.linkedin {
+    width: 70px;
+    margin-right: 2px;
+}
+
+.link-github {
+    width: 70%;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 1.2rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.link-linkedin {
+    width: 70%;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 1.2rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.link-github:hover,
+.link-linkedin:hover {
+    transition: .25s;
+    transform: scale(1.02);
+}
+
+.img-banner {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.img-banner:hover {
+    transition: .25s;
+    transform: scale(1.03);
+}
+
+.box-img-banner {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo-copy {
+    width: 80px;
+}
+
+.card-projects{
+    width: 310px;
+    padding-bottom: 3px;
+}
+
+.img-card{
+    width: 100%;
+    max-width: 310px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.about{
+    padding: 1.2rem 1rem;
+    background-color: #ff3700;
+    color: white;
+    text-align: center;
+}
+
+.box-habil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.habil{
+    padding: 8px;
+    font-size: 0.8rem;
+    border: 2.3px solid #000000;
+    background-color: white;
+    border-radius: 16px;
+    color: black;
+    cursor: default;
+}
+
+.habil:hover{
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+    transition: 1s;
+    border: none;
+}
+
+@media screen and (max-width: 769px){
+/* Botão hamburguer linhas */
+.one, .two, .three {
+    width: 100%;
+    height: 6px;
+    background-color: #ff3700;
+    margin: 6px auto;
+    transition: .3s;
+}
+
+.menu-toggle{
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* Esconde o menu por padrão */
+.menu-section nav {
+    display: none;
+}
+
+/* Quando abrir o menu */
+.menu-section.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 170px;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-section.on nav {
+    display: block;
+}
+
+.menu-section.on .menu-toggle {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+/* Animação para virar "X" */
+.menu-section.on .menu-toggle .one {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.menu-section.on .menu-toggle .two {
+    opacity: 0;
+}
+
+.menu-section.on .menu-toggle .three {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Links do menu */
+.menu-section.on nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section.on nav ul li {
+    margin: 0.1rem 0;
+}
+
+.menu-section.on nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+}
+
+/* ----------- Tablet (768px até 1023px) ----------- */
 @media screen and (min-width: 768px) {
-    .column-1{
+    .btn-nav-topo{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .img-logotipo {
+        width: 110px;
+    }
+
+    .topo nav ul {
+        display: flex;
+    }
+
+    .title-banner {
+        padding: 1.2rem;
+        text-align: center;
+    }
+
+    .img-banner {
+        width: 100%;
+        max-width: 380px;
+        border-radius: 50%;
+    }
+
+    .img-banner:hover {
+        transition: .25s;
+        transform: scale(1.03);
+    }
+
+    .box-img-banner {
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-portifolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .link-github,
+    .link-linkedin {
+        width: 45%;
+    }
+
+
+    .link-github {
+        width: 80%;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 1.2rem;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .link-linkedin {
+        width: 80%;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 2rem;
+        padding: 1.2rem;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .link-github:hover,
+    .link-linkedin:hover {
+        transition: .25s;
+        transform: scale(1.04);
+    }
+
+}
+
+/* ----------- Desktop (1024px+) ----------- */
+@media screen and (min-width: 1024px) {
+
+    .btn-nav-topo{
+        width: 75px;
+        height: 75px;
+    }
+
+    .topo nav ul {
+        display: flex;
+    }
+
+    .topo nav ul .nav-item a:hover{
+        color: var(--cor-font-menu-hover);
+        transition: 0.4s;
+    }
+
+    .wrap {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .column-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .img-banner {
+        width: 100%;
+        max-width: 380px;
+        border-radius: 50%;
+    }
+
+    .btn-portifolio {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .link-github {
+        width: 80%;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 1.4rem;
+        padding: 1.2rem;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .link-linkedin {
+        width: 80%;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 1.4rem;
+        padding: 1.2rem;
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .link-github:hover,
+    .link-linkedin:hover {
+        transition: .25s;
+        transform: scale(1.04);
+    }
+
+    .box-img-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    
 }

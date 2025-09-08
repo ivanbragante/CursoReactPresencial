@@ -32,62 +32,22 @@ header{
     background-color: var(--cor-bg-header);
 }
 
-.wrap{
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    display: grid;
-}
 
 .topo{
     width: 100%;
     background-color: var(--cor-bg-header);
 }
 
-.topo nav ul{
-    display: flex;
-}
-
 .topo nav ul .nav-item{
     list-style: none;
 }
 
-.topo nav ul .nav-item a{
-    text-decoration: none;
-    color: var(--cor-font-menu);
-    text-transform: uppercase;
-    font-family: var(--font-header);
-    font-size: 1.2rem;
-    padding: 0.8rem;
-}
-
-.topo nav ul .nav-item a:hover{
-    color: var(--cor-font-menu-hover);
-    transition: 0.4s;
-}
 
 .btn-nav{
     margin: 0rem 0.6rem 0rem;
     position: fixed;
     bottom: 7px;
     right: 7px;
-}
-
-.btn-nav-topo{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    cursor: pointer;
-    /* box-shadow: 2px 2px 6px #0000; */
-}
-
-.btn-nav-topo:hover{
-    transform: scale(1.2);
-    transition: 0.4s;
-}
-
-.img-logotipo{
-    width: 120px;
 }
 
 .container {
@@ -105,80 +65,8 @@ header{
     color: white;
 }
 
-.nome {
-    font-size: 4.2rem;
-    margin: 0px;
-}
 
-.nome:hover {
-    color: #ff3700;
-    cursor: default;
-    transition: 0.25s;
-}
 
-.funcao{
-    font-size: 2rem;
-    margin: 0px;
-}
 
-.funcao:hover{
-    color: #ff3700;
-    cursor: default;
-}
 
-.descricao{
-    font-size: 1rem;
-    font-family: var(--font-text-banner);
-    margin: 0px;
-}
 
-.descricao:hover{
-    color: #ff3700;
-    cursor: default;
-    transition: 0.25s;
-}
-
-.btn-portifolio{
-    display: flex;
-    gap: 1rem;
-}
-
-.github{
-    max-width: 90px;
-}
-
-.linkedin{
-    max-width: 90px;
-}
-
-.link-github{
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 2rem;
-    padding: 1.2rem;
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-}
-
-.link-linkedin{
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 2rem;
-    padding: 1.2rem;
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-}
-.link-github:hover, .link-linkedin:hover{
-    transition: .2s;
-    transform: scale(1.04);
-}
-
-.img-banner{
-    border-radius: 50%;
-}
