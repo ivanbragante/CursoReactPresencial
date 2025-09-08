@@ -23,10 +23,10 @@ const CpBanner = () => {
                             <img src={linkedin_banner} alt="Linkedin!" title="Linkedin!" className="linkedin"/>
                         </a>
                     </div>
+                </div>
 
-                    <div className="box-img-banner">
-                        <img src={img_banner} alt="Apresentação Projetos" title="Apresentação Projetos" className="img-banner"/>
-                    </div>
+                <div className="box-img-banner">
+                    <img src={img_banner} alt="Apresentação Projetos" title="Apresentação Projetos" className="img-banner"/>
                 </div>
             </div>
         </section>

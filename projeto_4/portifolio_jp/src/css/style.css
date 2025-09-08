@@ -6,11 +6,30 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
     padding: 0px;
     margin: 0px;
     border: 0px;
     font-family: var(--font-texto)
+}
+
+li{
+    list-style: none;
+}
+
+h3{
+    padding: 0.6rem 0rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    background-color: var(--cor-bg-header);
 }
 
 .wrap{
@@ -78,4 +97,53 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.banner-page{
+    padding: 2rem 1.4rem 4rem 1,4rem;
+    background-color: #000000;
+    color: white;
+}
+
+.nome {
+    font-size: 4.2rem;
+}
+
+.nome:hover {
+    color: #ff3700;
+    cursor: default;
+    transition: 0.25s;
+}
+
+.funcao{
+    font-size: 2rem;
+}
+
+.funcao:hover{
+    color: #ff3700;
+    cursor: default;
+}
+
+.descricao{
+    font-size: 1rem;
+    font-family: var(--font-text-banner);
+}
+
+.descricao:hover{
+    color: #ff3700;
+    cursor: default;
+    transition: 0.25s;
+}
+
+.btn-portifolio{
+    display: flex;
+    gap: 1rem;
+}
+
+.github{
+    max-width: 90px;
+}
+
+.linkedin{
+    max-width: 90px;
 }
