@@ -10,17 +10,19 @@ const CpBanner = () => {
             <div className="wrap column-1">
                 <div className="title-banner">
                     <h1 className="text-banner">
-                        <span className="nome">Ivan Bragante</span>
-                        <span className="funcao">Desenvolvedor Web FullStack</span>
-                        <span className="descricao">Este é meu portifolio, conheça um pouco mais sobre o meu trabalho!</span>
+                        <p className="nome">Ivan Bragante!</p>
+                        <p className="funcao">Desenvolvedor Web FullStack</p>
+                        <p className="descricao">Este é meu portifolio, conheça um pouco mais sobre o meu trabalho!</p>
                     </h1>
 
                     <div className="btn-portifolio">
-                        <a href="#" target="_blank" className="link-github">
+                        <a href="https://github.com/ivanbragante" target="_blank" className="link-github">
                             <img src={github_banner} alt="GitHub!" title="GitHub!" className="github"/>
+                            GitHub
                         </a>
-                        <a href="#" target="_blank" className="link-linkedin">
+                        <a href="https://www.linkedin.com/in/ivan-bragante-204a51190/" target="_blank" className="link-linkedin">
                             <img src={linkedin_banner} alt="Linkedin!" title="Linkedin!" className="linkedin"/>
+                            LinkedIn
                         </a>
                     </div>
                 </div>

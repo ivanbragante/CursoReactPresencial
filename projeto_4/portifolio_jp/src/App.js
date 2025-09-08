@@ -15,14 +15,12 @@ function App() {
     <>
       <CpBtnInicio/>
       <CpHeader/>      
-
       <main>
         <CpBanner/>
         <CpAbout/>
         <CpProjects/>
         <CpContact/>
       </main>
-
       <CpFooter/>
     </>
 

@@ -100,13 +100,14 @@ header{
 }
 
 .banner-page{
-    padding: 2rem 1.4rem 4rem 1,4rem;
+    padding: 2rem 1.4rem 2rem 1.4rem;
     background-color: #000000;
     color: white;
 }
 
 .nome {
     font-size: 4.2rem;
+    margin: 0px;
 }
 
 .nome:hover {
@@ -117,6 +118,7 @@ header{
 
 .funcao{
     font-size: 2rem;
+    margin: 0px;
 }
 
 .funcao:hover{
@@ -127,6 +129,7 @@ header{
 .descricao{
     font-size: 1rem;
     font-family: var(--font-text-banner);
+    margin: 0px;
 }
 
 .descricao:hover{
@@ -146,4 +149,36 @@ header{
 
 .linkedin{
     max-width: 90px;
+}
+
+.link-github{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 1.2rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.link-linkedin{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 1.2rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.link-github:hover, .link-linkedin:hover{
+    transition: .2s;
+    transform: scale(1.04);
+}
+
+.img-banner{
+    border-radius: 50%;
 }
