@@ -30,7 +30,7 @@ const CpHeader = () => {
                                 <a href="#about">Quem sou</a>
                             </li>
                             <li className="nav-item">
-                                <a href="#project">Portifolio</a>
+                                <a href="#portifolio">Portifolio</a>
                             </li>
                             <li className="nav-item">
                                 <a href="#contact">Contato</a>

@@ -142,18 +142,6 @@
     width: 80px;
 }
 
-.card-projects{
-    width: 310px;
-    padding-bottom: 3px;
-}
-
-.img-card{
-    width: 100%;
-    max-width: 310px;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
 
 .about{
     padding: 1.2rem 1rem;
@@ -186,6 +174,73 @@
     transition: 1s;
     border: none;
 }
+
+/* Cards dos Projetos */
+.title-projects{
+    margin: 0px;
+}
+
+.projects{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 1.2rem;
+}
+
+.card-projects{
+    background-color: white;
+    color: black;
+    width: 310px;
+    padding-bottom: 3px;
+    border-radius: 8px;
+}
+.card-projects:hover{
+    transform: scale(1.02);
+    transition: .3s;
+}
+
+.img-card{
+    width: 100%;
+    /* max-width: 310px; */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.grid-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.img-github{
+    border-radius: 100px;
+    width: 50px;
+    background-color: white;
+}
+
+.rep-github{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.6rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff3700;
+    border-radius: 10px;
+    padding: 5px 0.5px 5px 0.5px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.rep-github:hover{
+    transform: scale(1.01);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 769px){
 /* Botão hamburguer linhas */
@@ -352,6 +407,18 @@
         transform: scale(1.04);
     }
 
+    /* Cards dos Projetos */
+    .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+        justify-items: center;
+    }
+
+    .rep-github{
+        margin: 0.7rem;
+    }
+
 }
 
 /* ----------- Desktop (1024px+) ----------- */
@@ -436,7 +503,24 @@
         align-items: center;
     }
 
+    /* Cards dos Projetos */
+    .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0.8rem;
+    }
     
-
     
 }
+
+/* Cards em tela de monitor grande */
+@media screen and (min-width: 1400px){
+    .grid-projects{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+
+    

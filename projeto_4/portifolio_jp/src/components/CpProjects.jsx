@@ -24,13 +24,21 @@ const projetos = [
         descricao: "Projeto para site corporativo",
         link: "#",
     },
+
+    {
+        imagem: layout_site,
+        titulo: "Projeto Web - Front-End",
+        descricao: "Projeto para site corporativo",
+        link: "#",
+    }
+
 ]
 
 const cards = [];
 
 for(let i = 0; i < projetos.length; i++){
     cards.push(
-        <div className="card-projects">
+        <div className="card-projects" id="project">
             <img src={layout_site} alt="Projeto Web!" title="Projeto Web!" className="img-card"/>
             <h3 className="title-card">Projeto Web - Front-End</h3>
             <span className="info-projects">Projetos para site corporativo.</span>
