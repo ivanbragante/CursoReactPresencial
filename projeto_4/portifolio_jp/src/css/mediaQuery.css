@@ -180,6 +180,12 @@
     margin: 0px;
 }
 
+.title-card{
+    margin: 0px;
+    font-weight: bold;
+}
+
+
 .projects{
     text-align: center;
     color: white;
@@ -241,7 +247,165 @@
     cursor: pointer;
 }
 
+/* Section Contato */
 
+.contact{
+    padding-top: 1.2rem;
+    background-color: #ff3700;
+    color: black;
+    text-align: center;
+}
+
+.box-info-contact{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icon-ct{
+    background-color: #ffffff;
+    border-radius: 30%;
+    width: 35px;
+    padding: 0.6rem;
+}
+
+.itens-contact{
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.item-contact{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.link-wht-contato{
+    text-decoration: none;
+    color: #000000;
+    transition: .5s;
+}
+
+.link-wht-contato:hover{
+    padding: 0.2rem;
+    border-radius: 6px;
+    background-color: #005100;
+    color: white;
+    transform: scale(1.05);
+}
+
+.box-item-contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-endereco{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+/* Form */
+
+.msg-warning{
+    background-color: yellow;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-contact{
+    font-weight: bold;
+}
+
+.form-contact, .info-contact{
+    padding: 1.2rem;
+}
+
+.camp-form{
+    width: 100%;
+    height: 38px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-form-contact);
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.camp-form-msg{
+    width: 100%;
+    height: 90px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-form-contact);
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.align-btn{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-enviar{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px #000000;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem; 
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: rgb(19, 160, 26);
+    transition: .3s;
+}
+
+.btn-resetar{
+    background-color: rgb(252, 0, 0);
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px #000000;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem; 
+    cursor: pointer;
+}
+
+.btn-resetar:hover{
+    background-color: rgb(247, 47, 47);
+    transition: .3s;
+}
+
+/* Removendo o fundo laranja da section do contact no maps*/
+.maps{
+    background-color: transparent;
+}
+
+.maps iframe {
+    display: block;
+    border: none;
+}
+
+
+/* Media querie para botão hamburguer */
 @media screen and (max-width: 769px){
 /* Botão hamburguer linhas */
 .one, .two, .three {
@@ -509,7 +673,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0.8rem;
     }
-    
+
+    /* Section Contato */
+    .box-contact{
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
     
 }
 
