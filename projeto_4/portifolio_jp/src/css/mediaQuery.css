@@ -404,6 +404,31 @@
     border: none;
 }
 
+/* footer */
+.end-page{
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.ul-icones{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0px;
+}
+
+.icon-img{
+    height: 35px;
+    width: 35px;
+}
+
+.info-copy{
+    border-top: solid 1px #ffffff;
+    padding-top: 10px;
+}
+
+
 
 /* Media querie para botão hamburguer */
 @media screen and (max-width: 769px){
@@ -583,6 +608,20 @@
         margin: 0.7rem;
     }
 
+    /* Footer */
+    
+    .ul-icones{
+        gap: 3rem;
+    }
+    .icon-img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .info-copy{
+        padding: 15px;
+    }
+
 }
 
 /* ----------- Desktop (1024px+) ----------- */
@@ -680,6 +719,23 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+    }
+
+    /* Footer */
+    
+    .ul-icones{
+        gap: 4rem;
+    }
+    .icon-img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .info-copy{
+        border-top: solid 1px #ffffff;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
     }
     
 }

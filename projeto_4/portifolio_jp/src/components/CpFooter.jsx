@@ -16,7 +16,7 @@ const CpFooter = () => {
                 <div className="wrap">
                     <h1 className="title-rs">Redes Socias</h1>
                     <div className="icon-rs">
-                        <ul>
+                        <ul className="ul-icones">
                             <li>
                                 <a href="#" target="_blank" className="link-rs">
                                     <img src={linkedin_footer} alt="Linkedin" title="Linkedin" className="icon-img" />
@@ -60,11 +60,14 @@ const CpFooter = () => {
 
             <section className="copy">
                 <div className="wrap">
-                    <p>Todos os direitos reservados © 2025</p>
+                    <div className="info-copy">
+                        <p>Todos os direitos reservados © 2025</p>
 
-                    <a href="#">
-                        <img src={logotipo_footer} alt="JP portifólio" title="JP portifólio" className="logotipo-copy"/>
-                    </a>
+                        <a href="#">
+                            <img src={logotipo_footer} alt="JP portifólio" title="JP portifólio" className="logotipo-copy" />
+                        </a>
+                    </div>
+
                 </div>
             </section>
         </footer>
